@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const Product = require('../models/Product');
 
+
 router.get('/', async (req, res) => {
     try {
         // Retrieve all products from the database
@@ -13,7 +14,10 @@ router.get('/', async (req, res) => {
     }
 });
 
-module.exports = router;
 
+
+
+
+module.exports  =  router;
 
 

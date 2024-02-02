@@ -4,15 +4,19 @@ const cors = require('cors');
 const productRoutes = require('./routes/productRoutes');
 const cartRoutes = require('./routes/cartRoutes');
 const userRoutes = require('./routes/userRoutes');
+
 const homeRoutes = require('./routes/homeRoutes')
+
+
 
 const app = express();
 const port = 4110;
 
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
-
 mongoose.connect('mongodb+srv://johnkennedynnawuihe:johnkennedy12@cluster0.lqqebzy.mongodb.net/test?retryWrites=true&w=majority', {
+
+
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
